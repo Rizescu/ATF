@@ -6,22 +6,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 @Getter
-public class HomePage  extends AbstractPage{
+public class HomePage extends AbstractPage {
 
     @FindBy(xpath = "//h6[text()='Dashboard']")
     private WebElement dashboardSign;
 
-    @FindBy(xpath = "//p[text()='Janna2 Kowalska2']")
+    @FindBy(xpath = "//img[@alt='profile picture']")
     private WebElement userMeniu;
 
     @FindBy(xpath = "//a[text()='Logout']")
     private WebElement logout;
 
 
-
-
-
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
         super(driver);
     }
 }
